@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>booking</title>
+    <link rel="stylesheet" href="../DA2/public/asset/css/header.css" />
+    <link rel="stylesheet" href="../DA2/public/asset/css/booking.css" />
+    <link rel="stylesheet" href="../DA2/public/asset/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="#" />
+      </div>
+      <div class="menu row">
+        <li><a href="">Trang Chủ</a></li>
+        <li><a href="">Giới Thiệu</a></li>
+        <li>
+          <a href="">Tour Du Lịch</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="">tour trong nước</a>
+              <ul>
+                <li><a href="">Bắc Trung Bộ</a></li>
+                <li><a href="">Trung bộ</a></li>
+                <li><a href="">Nam Trung bộ</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">tour nước ngoài</a>
+              <ul>
+                <li><a href="">Nhật Bản</a></li>
+                <li><a href="">Trung Quốc</a></li>
+                <li><a href="">Hàn Quốc</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li><a href="">Tin Tức</a></li>
+        <li><a href="">liên hệ</a></li>
+      </div>
+      <div class="others">
+        <li>
+          <input type="text" placeholder="tìm kiếm" /><i
+            class="fas fa-search"
+          ></i>
+        </li>
+        <li><a class="fa fa-paw" href="#"></a></li>
+        <li><a class="fa fa-user" href="#"></a></li>
+        <li><a class="fa fa-shopping-bag" href="#"></a></li>
+      </div>
+    </header>
+
+ 
+
+<section class="booking">
+    <div class="container">
+        <div class="booking-top row">
+            <p>trang chủ</p>
+            <span>&#8594;</span>
+            <p>tour du lịch</p>
+            <span>&#8594;</span>
+            <p>tour du lịch</p>
+        </div>
+
+        <div class="booking-content row">
+            <div class="booking-content-left">
+                <div class="booking-content-left-big-img">
+                    <img src="../DA2/public/asset/img/8.jpg" alt="" />
+                </div>
+                <div class="booking-content-left-small-img row">
+                    <img src="../DA2/public/asset/img/8.jpg" alt="" />
+                    <img src="../DA2/public/asset/img/3.jpg" alt="" />
+                    <img src="../DA2/public/asset/img/5.jpg" alt="" />
+                    <img src="../DA2/public/asset/img/8.jpg" alt="" />
+                    <img src="../DA2/public/asset/img/8.jpg" alt="" />
+                </div>
+
+                <div class="booking-content-left-bottom">
+                    <div class="booking-content-left-bottom-top">&#8744;</div>
+
+                    <div class="booking-content-left-bottom-content-big">
+                        <div class="booking-content-left-bottom-content-title row">
+                            <div class="booking-content-left-bottom-content-title-item mota tab-item active"
+                                data-tab="mota">
+                                <p>Mô tả</p>
+                            </div>
+                            <div class="booking-content-left-bottom-content-title-item lichtrinh tab-item"
+                                data-tab="lichtrinh">
+                                <p>Lịch trình</p>
+                            </div>
+                            <div class="booking-content-left-bottom-content-title-item vitri tab-item" data-tab="vitri">
+                                <p>vị trí</p>
+                            </div>
+                            <div class="booking-content-left-bottom-content-title-item danhgia tab-item"
+                                data-tab="danhgia">
+                                <p>đánh giá tour</p>
+                            </div>
+                        </div>
+
+                        <div class="booking-content-left-bottom-content">
+                            <div class="booking-content-left-bottom-content-mota tab-content" id="mota">
+                                <p>e21e212d2d21e12e21e21e21e21e21esd2s21s</p>
+                            </div>
+                            <div class="booking-content-left-bottom-content-lichtrinh tab-content" id="lichtrinh"
+                                style="display: none;">
+                                <p>qưeqwdwqdwqdwqdwqdwqdwqdwqdwqdwqdqwdwq</p>
+                                <!--- dùng vòng lặp để cách xuống hàng demo thôi -->
+                            </div>
+                            <div class="product-content-left-bottom-content-vitri tab-content" id="vitri"
+                                style="display: none;">
+                                <p>3123213213213213213213213</p>
+                            </div>
+                            <div class="product-content-left-bottom-content-danhgia tab-content" id="danhgia"
+                                style="display: none;">
+                                <div class="review-danhgia">
+                                  <div class="hienthi-review row">
+                                    <img src="../DA2/public/asset/img/8.jpg" alt="">
+                                    <div class="hienthi-review-text">
+                                      <p>tour rất đáng đ</p>
+                                    </div>
+                                  </div>
+                                  <div class="binhluan row">
+                                    <img src="../DA2/public/asset/img/8.jpg" alt="">
+                                    <form action="">
+                                      <input type="text" name="binhluan">
+                                      <button>gửi</button>
+                                    </form>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="booking-content-right">
+                <form id="booking-form" action="index.php?controller=booking&action=addTest" method="POST">
+                    <input type="hidden" name="tourID" value="">
+                    <div class="content-top">
+                        <h4></h4>
+                        <p><span>Mã tour:</span> 01245D</p>
+                    </div>
+
+                    <div class="ngaygio row">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input type="date" name='date'>
+                    </div>
+                    <div class="ticket">
+                        <h4></h4>
+                        <div class="ticket-nguoilon row">
+                            <h4>người lớn</h4>
+                            <input type="number" min=0 id="so-luong-nguoi-lon" value="0" name="numAdutls">
+                            <p><sup>đ</sup></p>
+                        </div>
+                        <div class="ticket-treem row">
+                            <h4>trẻ em</h4>
+                            <input type="number" min=0 id="so-luong-tre-em" value="0" name="numChildren">
+                            <p ><sup>đ</sup></p>
+                        </div>
+                    </div>
+                    <div class="total row">
+                        <h4>tổng tiền</h4>
+                        <p id="tong-tien">0<sup>đ</sup></p>
+
+                    </div>
+
+                    <div class="total row">
+                        <h4>yêu cầu</h4>
+                        <textarea name="specialRequest"></textarea>
+
+                    </div>
+
+                    <div class="total-button row">
+                        <button type="submit">đặt ngay</button>
+                        <button>liên hệ tư vấn</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+</section>
+
+
+
+    <!-- footer -->
+    <section class="app-container">
+      <p>tải ứng dụng</p>
+      <div class="app-google">
+        <a href=""><img src="../../public/asset/img/8.png" alt="" /></a>
+        <a href=""><img src="../../public/asset/img/9.png" alt="" /></a>
+        <p>nhận bản tin IVY moda</p>
+        <input type="text" placeholder="nhập email của bạn" />
+      </div>
+    </section>
+    <div class="footer-top row">
+      <li>
+        <a href=""><img src="../../public/asset/img/10.png" alt="" /></a>
+      </li>
+      <li><a href="">liên hệ</a></li>
+      <li><a href="">tuyển dụng</a></li>
+      <li><a href="">giới thiệu</a></li>
+      <li>
+        <a href="" class="fab fa-facebook"></a>
+        <a href="" class="fab fa-twitch"></a>
+        <a href="" class="fab fa-youtube"></a>
+      </li>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©IVYmoda All rights reserved</p>
+    </div>
+  </body>
+  <script src="../../public/asset/js/booking.js"></script>
+</html>

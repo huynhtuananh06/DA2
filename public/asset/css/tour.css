@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.row > div {
+  padding: 0 15px;
+}
+.tour {
+  padding: 100px 50px;
+  background-color: #1f1f1f;
+}
+.tour-top {
+  margin: 50px;
+}
+.tour-top p {
+  margin: 0 12px;
+}
+
+.tour-left {
+  flex: 0 0 250px; /* cố định 250px thay vì 15% */
+  width: 250px !important;
+}
+
+.tour-right {
+  flex: 1; /* chiếm hết phần còn lại */
+  min-width: 0;
+}
+
+.tour-right-top-item:first-child {
+  flex: 2;
+  font-size: 16px;
+  /* chỉnh chữ */
+}
+.tour-right-top-item {
+  flex: 1;
+  padding: 0 12px;
+}
+.tour-right-top-item button {
+  width: 100%;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.tour-right-top-item select {
+  width: 100%;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.tour-right-content {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 24px;
+  width: 100%; /* THÊM DÒNG NÀY */
+
+  padding: 24px; /* thay 20px → 24px cho đẹp */
+
+  box-sizing: border-box;
+}
+.tour-right-content-item {
+  width: calc(25% - 24px); /* sửa từ calc(25% - 12px) */
+  flex: 0 0 calc(25% - 24px);
+  margin: 0 !important; /* quan trọng – bỏ hết margin cũ */
+  border: 1px solid #ffc107;
+  border-radius: 12px;
+}
+
+.tour-right-content-item img {
+  width: 100%;
+  border-radius: 20px;
+  padding: 5px 2px;
+}
+.tour-khung {
+  text-align: left;
+  padding: 20px 0 0 5px;
+}
+.tour-khung h1 a {
+  font-size: 15px;
+
+  color: rgba(255, 193, 7, 0.3);
+}
+.tour-khung p {
+  font-size: 12px;
+  padding-top: 5px;
+}
+.start {
+  padding: 10px 10px;
+}
+.start i {
+  margin-right: 10px;
+}
+.tour-khung h4 {
+  color: #ffc107;
+}
+
+.tour-right-bottom {
+  justify-content: space-between;
+  margin: 30px 0 20px;
+  width: 100%;
+}
+
+.tour-right-bottom p {
+  font-size: 15px;
+}
+
+.tour-left ul li {
+  padding: 12px;
+}
+
+.tour-left ul li > a {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.tour-left ul li ul li {
+  padding-left: 10px;
+}
+.tour-left-li ul {
+  display: none;
+}
+
+.tour-left-li.block ul {
+  display: block;
+}
+
+.tour-left-li ul li ul li a {
+  font-size: 12px;
+}
+.pagination a {
+  color: #ffc107;
+}
+
+@media (max-width: 1200px) {
+  .tour-right-content-item {
+    width: calc(33.333% - 24px);
+    flex: 0 0 calc(33.333% - 24px);
+  }
+}
+@media (max-width: 900px) {
+  .tour-right-content-item {
+    width: calc(50% - 24px);
+    flex: 0 0 calc(50% - 24px);
+  }
+}
+@media (max-width: 600px) {
+  .tour-right-content-item {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}

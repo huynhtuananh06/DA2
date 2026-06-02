@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root{
+    --main-text-font: "Roboto", sans-serif;
+    --logo-text-font: "Lobster", sans-serif; 
+    --main-color: #FFC107;
+}
+/* chon tat ca bat dau tu<html> 
+margin:xác định khoảng cách giữa đường viền của phần tử và các phần tử xung quanh.
+padding: xác định phần tử và đường viền
+div: là một dạng hộp gom các pahafn tử lại
+box-sizing: border-box; tự động tính toán kích cỡ
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+}
+p{
+    color: #FFF8E1;
+}
+header{
+    background-image: url();
+    background-position: center; /*căn lề*/
+    background-repeat: no-repeat;/*ngăn lặp*/
+    background-size: cover;/*kich thuoc*/
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.container{
+    max-width: 1024px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.big-image{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+}
+.top{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+/* hiển thị chiều ngang*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}  
+.header-top {
+    justify-content: space-between;
+    padding: 12px 0;
+    align-items: center;
+}
+.header-top p {
+    font-family: var(--logo-text-font);
+    font-size: 25px;
+    letter-spacing : 2px;
+    color: var(--main-color);
+    
+}
+.header-top p span{
+    font-size: 20px;
+}
+.header-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 700px;
+    min-width: 300px;
+    text-align: center;
+}
+.header-text h1{
+    font-family: var(--main-text-font);
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.header-text p {
+    font-family: var(--main-text-font);
+    color: white;
+
+}
+.header-text button{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.5s ease;
+
+}
+.header-text button:hover{
+    background-color: var(--main-color)
+}

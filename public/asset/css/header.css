@@ -1,0 +1,172 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*tìm hiểu thêm*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+:root {
+  --main: #ffc107;
+  --main-hover: #ffb300;
+  --main-light: #ffca28;
+  --main-glow: #ffd740;
+  --bg: #0d0d0d;
+  --surface: #1e1e1e;
+  --text: #ffffff;
+  --text-muted: #b0b0b0;
+  --text-on-main: #000000;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /**/
+}
+li {
+  list-style: none;
+}
+.menu > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+}
+header {
+  background: rgba(255, 193, 7, 0.3);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 50px;
+  align-items: center; /*căn giữa chiều dọc*/
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: all 0.4s ease;
+}
+.logo {
+  flex: 1;
+  align-items: center;
+  margin-right: 10px;
+}
+.logo figcaption {
+  color: #000000;
+  font-weight: bold;
+}
+.logo > a {
+  margin-right: 10px;
+}
+.logo > a > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.menu {
+  flex: 3;
+  margin-right: 10px;
+}
+.menu > ul > li {
+  padding: 0 12px;
+  position: relative;
+}
+.menu > ul > li > a {
+  font-size: 20px;
+  font-weight: bold;
+  display: block; /**/
+  line-height: 20px; /**/
+  color: #1f1f1f;
+  transition: 0.3s;
+}
+.menu > ul > li > a:hover {
+  color: #ccc;
+}
+.menu > ul > li:hover .sub-menu {
+  visibility: visible;
+  top: 45px;
+}
+.sub-menu {
+  position: absolute;
+  border: 1px solid #ccc;
+  width: 150px;
+  padding: 10px 5px 10px 5px;
+  visibility: hidden;
+  top: 60px;
+  transition: 0.3s;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+}
+.sub-menu ul {
+  padding-left: 10px;
+}
+.sub-menu > li > ul > li:hover {
+  border-radius: 20px;
+  background-color: var(--main);
+}
+.sub-menu > li > a {
+  font-size: 16px;
+  font-weight: bold;
+}
+.sub-menu > li > ul > a {
+  font-weight: normal;
+  font-size: 12px;
+}
+.sub-menu > li > ul > li > a {
+  color: #ccc;
+  transition: 0.2s;
+}
+.sub-menu > li > ul > li > a:hover {
+  color: #000000;
+}
+.other {
+  flex: 1;
+}
+.search-form {
+  width: 50%;
+  display: flex;
+  margin-right: 5px;
+}
+.search-form input {
+  width: 80%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #333;
+}
+.search-form button {
+  background-color: transparent;
+  border: none;
+  width: 20%;
+  transition: 0.3s;
+}
+.search-form button:hover {
+  color: white;
+}
+.user-utility-nav {
+  flex: 1;
+}
+.user-utility-nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 12px;
+  position: relative;
+  justify-content: space-between;
+}
+.user-utility-nav > ul > li > a {
+  transition: 0.3s;
+}
+.user-utility-nav > ul > li > a:hover {
+  color: #ccc;
+}
+
+header.sticky {
+  /* background-color: rgba(255, 255, 255, 1); */
+  background: var(--main);
+}

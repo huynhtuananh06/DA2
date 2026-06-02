@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --main-text-font: "Roboto", sans-serif;
+  --logo-text-font: "Lobster", sans-serif;
+  --main-color: #ffc107;
+}
+body {
+  background-color: #222;
+}
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+/* --------nice-place */
+
+.nice-place {
+  padding: 100px 0;
+}
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+.btn {
+  height: 30px;
+  width: 100px;
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5 ease;
+}
+.btn:hover {
+  background-color: rgb(233, 13, 13);
+}
+.h1-style {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--main-color);
+  position: relative;
+}
+.h1-style::before {
+  position: absolute;
+  content: "";
+  height: 5px;
+  width: 150px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.h1-style::after {
+  position: absolute;
+  content: "\2665";
+  width: 40px;
+  height: 20px;
+  color: red;
+  background-color: #222;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* nice placwe */
+.nice-place-item {
+  width: 30%;
+  height: 400px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+.nice-place-item:hover .nice-place-text {
+  transform: translateX(0%);
+  transition: all 0.8s ease;
+}
+.nice-place-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+.nice-place-text {
+  width: 100%;
+  position: absolute;
+  height: 200px;
+  bottom: 0;
+  padding: 12px;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8),
+    rgba(255, 255, 255, 0)
+  );
+  transform: translateX(-100%);
+}
+.nice-place-text h2 {
+  color: var(--main-color);
+}
+.nice-place-text i {
+  color: yellow;
+}
+.nice-place-text p {
+  color: white;
+}
+/* about */
+.about {
+  padding: 100px 0;
+}
+
+.about-content-left {
+  width: 50%;
+}
+.about-content-left img {
+  width: 100%;
+}
+.about-content-right {
+  width: 50%;
+  padding-left: 50px;
+}
+.about-content-right h2 {
+  font-family: var(--main-text-font);
+  font-weight: normal;
+  color: var(--main-color);
+}
+.about-content-right p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.service {
+  margin-top: 30px;
+}
+.service-item {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  box-shadow: 2px 2px 10px white;
+}
+.service-item img {
+  width: 150px;
+  margin-bottom: 6px;
+}
+.dichvu {
+  margin-top: 33px;
+}
+/* tour */
+.tour {
+  padding: 100px 0;
+}
+.tour-content-item-img {
+  width: 50%;
+  height: 300px;
+}
+.tour-content-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tour-content-item-text {
+  width: 50%;
+  padding: 20px 0 0 50px;
+}
+.tour-content-item-text h2 {
+  font-family: var(--main-text-font);
+  font-weight: normal;
+  color: var(--main-color);
+}
+.tour-content-item-text p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+.tour-content-item {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+.tour-content-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+/* Riview */
+.Review {
+  padding: 100px 0;
+}
+.Review-item {
+  width: 30%;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px 12px;
+  transition: all 0.5s ease;
+}
+.Review-item:hover {
+  box-shadow: 2px 2px 10px var(--main-color);
+}
+.Review-item:hover .Review-item-text img {
+  transform: translateY(-15px);
+}
+.Review-item-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.Review-item-img {
+  padding: 12px;
+}
+.Review-item-img h2 {
+  font-family: var(--main-text-font);
+  font-size: 16px;
+  color: var(--main-color);
+}
+.Review-item-img p {
+  font-size: 14px;
+  font-family: var(--main-text-font);
+  color: #fff8e1;
+}
+.Review-item-text {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+}
+.Review-item-text p {
+  font-size: 16px;
+  margin: 20px 0;
+}
+.Review-item-text span {
+  color: var(--main-color);
+}
+.Review-item-text img {
+  width: 50px;
+  transition: all 0.5s ease;
+}
+.Review-item-img-text {
+  width: 70%;
+}
+/* responsive */
+@media (max-width: 575px) {
+  .header-content {
+    width: 100%;
+  }
+  .nice-place {
+    padding: 50px 0;
+  }
+  .nice-place-item {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 12px;
+  }
+  .about {
+    padding: 50px 0;
+  }
+  .about-content-left {
+    width: 100%;
+  }
+  .about-content-right {
+    width: 100%;
+    padding: 0 12px;
+  }
+  .service-item {
+    width: 100%;
+    margin-bottom: 20px;
+    margin: 12px;
+  }
+  .tour {
+    padding: 50px 0;
+  }
+  .tour-content-item-img {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+  }
+  .tour-content-item-text {
+    width: 100%;
+    padding: 12px;
+  }
+  .Review {
+    padding: 30px 0;
+  }
+  .Review-item {
+    width: 100%;
+    margin-bottom: 20px;
+    margin: 12px;
+  }
+
+  .header-top ul {
+    position: fixed;
+    width: 200px;
+    height: 100vh;
+    background-color: var(--main-color);
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+  .header-top ul li {
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  .header-top > i {
+    display: block;
+  }
+  .header-top ul > i {
+    display: block;
+  }
+  .header-top {
+    padding: 0 12px;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@300&display=swap");

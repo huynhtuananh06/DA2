@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ND Travel - Đặt Tour Du Lịch Giá Tốt Nhất</title>
+
+    <!-- Google Font (gợi ý dùng Inter hoặc Poppins cho hiện đại) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Bootstrap 5 CDN (chỉ 2 dòng này là giao diện đã pro hơn 70%) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS riêng của bạn (sẽ gom hết vào 1 file duy nhất sau) -->
+    <link rel="stylesheet" href="../DA2/public/asset/css/style.css" />
+    <!-- bạn sẽ tạo file này -->
+  </head>
+  <body>
+    <!-- ====================== HEADER ====================== -->
+    <header class="header py-3 border-bottom">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-between">
+          <!-- Logo -->
+          <div class="col-lg-2 col-6">
+            <a href="/" class="logo">
+              <img
+                src="../DA2/public/asset/img/logo.png"
+                alt="ND Travel"
+                class="img-fluid"
+                style="max-height: 50px"
+              />
+            </a>
+          </div>
+
+          <!-- Main Menu -->
+          <nav class="col-lg-6 d-none d-lg-flex justify-content-center">
+            <ul class="menu list-unstyled d-flex gap-5 mb-0 fs-5 fw-medium">
+              <li>
+                <a href="/" class="text-decoration-none text-dark">Trang chủ</a>
+              </li>
+              <li>
+                <a href="/about.php" class="text-decoration-none text-dark"
+                  >Giới thiệu</a
+                >
+              </li>
+
+              <li class="dropdown position-relative">
+                <a href="/tour.php" class="text-decoration-none text-dark"
+                  >Tour du lịch <i class="fas fa-caret-down ms-1"></i
+                ></a>
+                <ul
+                  class="sub-menu position-absolute bg-white shadow-lg rounded-3 mt-2 py-3"
+                >
+                  <li class="dropdown-submenu position-relative">
+                    <a
+                      href="#"
+                      class="d-flex justify-content-between align-items-center px-4 py-2"
+                      >Tour trong nước <i class="fas fa-chevron-right ms-3"></i
+                    ></a>
+                    <ul
+                      class="sub-sub-menu position-absolute start-100 top-0 bg-white shadow-lg rounded-3 mt-2 py-3"
+                    >
+                      <li><a href="#" class="d-block px-4 py-2">Bắc Bộ</a></li>
+                      <li>
+                        <a href="#" class="d-block px-4 py-2">Trung Bộ</a>
+                      </li>
+                      <li><a href="#" class="d-block px-4 py-2">Nam Bộ</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu position-relative">
+                    <a
+                      href="#"
+                      class="d-flex justify-content-between align-items-center px-4 py-2"
+                      >Tour nước ngoài <i class="fas fa-chevron-right ms-3"></i
+                    ></a>
+                    <ul
+                      class="sub-sub-menu position-absolute start-100 top-0 bg-white shadow-lg rounded-3 mt-2 py-3"
+                    >
+                      <li>
+                        <a href="#" class="d-block px-4 py-2">Nhật Bản</a>
+                      </li>
+                      <li>
+                        <a href="#" class="d-block px-4 py-2">Hàn Quốc</a>
+                      </li>
+                      <li><a href="#" class="d-block px-4 py-2">Châu Âu</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="/news.php" class="text-decoration-none text-dark"
+                  >Tin tức</a
+                >
+              </li>
+              <li>
+                <a href="/contact.php" class="text-decoration-none text-dark"
+                  >Liên hệ</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Right icons + search -->
+          <div class="col-lg-4 col-6 text-end">
+            <div
+              class="others d-flex align-items-center justify-content-end gap-3"
+            >
+              <form class="position-relative d-none d-md-block">
+                <input
+                  type="text"
+                  placeholder="Tìm kiếm..."
+                  class="px-3 py-2 rounded-pill border"
+                  style="width: 200px"
+                />
+                <i
+                  class="fas fa-search position-absolute end-0 top-50 translate-middle-y me-3"
+                ></i>
+              </form>
+              <a href="#" class="text-dark fs-4"
+                ><i class="far fa-heart"></i
+              ></a>
+              <a href="/login.php" class="text-dark fs-4"
+                ><i class="far fa-user"></i
+              ></a>
+              <a href="/cart.php" class="text-dark fs-4 position-relative">
+                <i class="fas fa-shopping-bag"></i>
+                <span
+                  class="badge bg-danger rounded-pill position-absolute top-0 start-100 translate-middle-x"
+                  >3</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================== HERO SLIDER ====================== -->
+    <section class="hero-slider position-relative">
+      <div class="slider">
+        <img
+          src="../DA2/public/asset/img/3.jpg"
+          alt="Du lịch Việt Nam"
+          class="active"
+        />
+        <img src="../DA2/public/asset/img/2.jfif" alt="Du lịch nước ngoài" />
+        <img src="../DA2/public/asset/img/8.jpg" alt="Khuyến mãi" />
+        <img src="../DA2/public/asset/img/11.jpg" alt="Tour hot" />
+      </div>
+      <div
+        class="dot-container position-absolute bottom-0 start-50 translate-middle-x pb-4"
+      >
+        <span class="dot active" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+    </section>
+
+    <!-- ====================== SEARCH BOX ====================== -->
+    <section
+      class="search-section bg-primary text-white py-5 -mt-5 position-relative"
+      style="margin-top: -80px; z-index: 2"
+    >
+      <div class="container">
+        <form class="bg-white rounded-4 shadow p-4 text-dark">
+          <div class="row g-3 align-items-center">
+            <div class="col-md-3">
+              <div class="input-group">
+                <span class="input-group-text border-0 bg-transparent"
+                  ><i class="fas fa-map-marker-alt text-primary"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control border-0 shadow-none"
+                  placeholder="Bạn muốn đi đâu?"
+                />
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="input-group">
+                <span class="input-group-text border-0 bg-transparent"
+                  ><i class="fas fa-calendar-alt text-primary"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control border-0 shadow-none"
+                  placeholder="Ngày đi"
+                />
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="input-group">
+                <span class="input-group-text border-0 bg-transparent"
+                  ><i class="fas fa-users text-primary"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control border-0 shadow-none"
+                  placeholder="Số người"
+                />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <input type="text" class="form-control" placeholder="Điểm đi" />
+            </div>
+            <div class="col-md-2">
+              <button class="btn btn-danger w-100 fw-bold">TÌM KIẾM</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ====================== LÝ DO CHỌN ====================== -->
+    <section class="why-choose py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Vì sao chọn ND Travel?</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="text-center p-4">
+              <i class="fas fa-coins fa-3x text-warning mb-3"></i>
+              <h4>Giá tốt nhất</h4>
+              <p>Cam kết giá cạnh tranh, nhiều ưu đãi hấp dẫn</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center p-4">
+              <i class="fas fa-ticket-alt fa-3x text-success mb-3"></i>
+              <h4>Đặt tour nhanh chóng</h4>
+              <p>Chỉ 3 bước đơn giản là hoàn tất đặt tour</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="text-center p-4">
+              <i class="fas fa-headset fa-3x text-info mb-3"></i>
+              <h4>Hỗ trợ 24/7</h4>
+              <p>Tư vấn tận tình trước – trong – sau chuyến đi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== HƯỚNG DẪN ====================== -->
+    <section class="how-to-book py-5">
+      <div class="container">
+        <h2 class="text-center mb-3 fw-bold">
+          Chỉ 3 bước để có chuyến đi tuyệt vời
+        </h2>
+        <p class="text-center text-muted mb-5">
+          Quy trình đặt tour đơn giản và nhanh chóng
+        </p>
+        <div class="row g-5">
+          <div class="col-md-4 text-center">
+            <img
+              src="../DA2/public/asset/img/1.jpg"
+              class="rounded-circle mb-3"
+              width="120"
+              alt=""
+            />
+            <h4>1. Chọn tour yêu thích</h4>
+            <p>Tìm kiếm và lựa chọn hành trình phù hợp</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="../DA2/public/asset/img/2.png"
+              class="rounded-circle mb-3"
+              width="120"
+              alt=""
+            />
+            <h4>2. Đặt chỗ & thanh toán</h4>
+            <p>Nhanh chóng – an toàn – nhiều hình thức</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="../DA2/public/asset/img/3.png"
+              class="rounded-circle mb-3"
+              width="120"
+              alt=""
+            />
+            <h4>3. Nhận vé & lên đường</h4>
+            <p>Chuẩn bị hành lý và tận hưởng kỳ nghỉ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FOOTER ====================== -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <img
+              src="../DA2/public/asset/img/logo-white.png"
+              alt="ND Travel"
+              class="mb-3"
+              height="50"
+            />
+            <p>Công ty du lịch uy tín hàng đầu Việt Nam</p>
+          </div>
+          <div class="col-md-4 mb-4">
+            <h5>Liên hệ</h5>
+            <p><i class="fas fa-phone me-2"></i> 1900 1234</p>
+            <p><i class="fas fa-envelope me-2"></i> support@ndtravel.vn</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Tải ứng dụng</h5>
+            <div class="d-flex gap-3 mb-3">
+              <a href="#"
+                ><img
+                  src="../DA2/public/asset/img/appstore.png"
+                  height="40"
+                  alt=""
+              /></a>
+              <a href="#"
+                ><img
+                  src="../DA2/public/asset/img/googleplay.png"
+                  height="40"
+                  alt=""
+              /></a>
+            </div>
+            <div class="social">
+              <a href="#" class="text-white me-3 fs-4"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="text-white me-3 fs-4"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" class="text-white fs-4"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <p class="text-center mb-0">
+          &copy; 2025 ND Travel. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../DA2/public/asset/js/slider.js"></script>
+  </body>
+</html>

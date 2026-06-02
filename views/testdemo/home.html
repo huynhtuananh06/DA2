@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../DA2/public/asset/css/header.css" />
+    <link rel="stylesheet" href="../DA2/public/asset/css/home.css" />
+    
+    <link rel="stylesheet" href="../DA2/public/asset/css/tour.css" />
+    <link rel="stylesheet" href="../DA2/public/asset/css/booking.css" />
+
+    <link rel="stylesheet" href="../DA2/public/asset/css/footer.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <figure class="logo row">
+        <a href="/">
+          <img src="../DA2/public/asset/img/2.png" alt="ND Travel Logo" />
+        </a>
+        <figcaption>ND Travel</figcaption>
+      </figure>
+
+      <nav class="menu">
+        <ul>
+           <li><a href="index.php?controller=home&action=index">Trang Chủ</a></li>
+          <li><a href="">Giới Thiệu</a></li>
+
+          <li>
+            <a href="index.php?controller=tour&action=index">Tour Du Lịch</a>
+            <ul class="sub-menu">
+              <li>
+                <a href="">tour trong nước</a>
+                <ul>
+                  <li><a href="">Bắc Trung Bộ</a></li>
+                  <li><a href="">Trung bộ</a></li>
+                  <li><a href="">Nam Trung bộ</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">tour nước ngoài</a>
+                <ul>
+                  <li><a href="">Bắc Trung Bộ</a></li>
+                  <li><a href="">Trung bộ</a></li>
+                  <li><a href="">Nam Trung bộ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="">Tin Tức</a></li>
+          <li><a href="">liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="other row">
+        <form class="search-form" role="search">
+          <input type="text" placeholder="Tìm kiếm..." name="q" />
+          <button type="submit" aria-label="Tìm kiếm">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+
+        <nav class="user-utility-nav">
+          <ul>
+            <li>
+              <a
+                class="fa-solid fa-clock-rotate-left"
+                 href="index.php?controller=booking&action=bookingHistory"
+                title="Lịch sử xem"
+              ></a>
+            </li>
+            <li>
+              <a class="fa-solid fa-user" href="index.php?controller=user&action=index" title="Tài khoản"></a>
+            </li>
+            <li>
+              <a
+                class="fa-solid fa-basket-shopping"
+                href="#"
+                title="Giỏ hàng"
+              ></a>
+            </li>
+            <li>
+              <a class="fa-solid fa-power-off" href="index.php?controller=login&action=logout" title="Đăng xuất"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- home-head-slider -->
+    <section id="slider">
+      <div class="aspect-ratio-169">
+        <img src="../DA2/public/asset/img/11.jpg" alt="" />
+        <img src="../DA2/public/asset/img/8.jpg" alt="" />
+        <img src="../DA2/public/asset/img/11.jpg" alt = "" />
+        <img src="../DA2/public/asset/img/3.jpg" alt="" />
+      </div>
+      <div class="dot-container">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </section>
+
+    <div class="seach-container">
+      <div class="seach">
+        <ul>
+          <li><input type="text" placeholder="Bạn muốn đi đâu" /></li>
+          <li><i class="fa-solid fa-location-dot"></i></li>
+          <li><input type="text" placeholder="chọn điểm đi" /></li>
+          <li><i class="fa-solid fa-location-dot"></i></a></li>
+          <li><input type="text" placeholder="chọn điểm đến" /></li>
+          <li><i class="fa-solid fa-calendar-week"></i></li>
+          <li><input type="text" placeholder="chọn ngày đi" /></li>
+          <li><button>tìm kiếm</button></li>
+        </ul>
+      </div>
+    </div>
+    <!-- li do -->
+     <div class="lido">
+        <h1>Vì sao bạn nên chọn </h1>
+        <div class="lido-bottom">
+            <div class="lido-bottom-khung">
+                <div class="lido-icon"><i class="fa-solid fa-coins"></i></div>
+            <div class="lido-content">
+                <h2>giá tốt nhất cho bạn</h2>
+                <p>Có nhiều mức giá đa dạng phù hợp
+với ngân sách và nhu cầu của bạn</p>
+            </div>
+            </div>
+
+            <div class="lido-bottom-khung">
+                <div class="lido-icon"><i class="fa-solid fa-ticket-simple"></i></div>
+            <div class="lido-content">
+                <h2>Booking dễ dàng</h2>
+                <p>Các bước booking và chăm sóc
+khách hàng nhanh chóng và thuận tiện</p>
+            </div>
+            </div>
+
+            <div class="lido-bottom-khung">
+                <div class="lido-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="lido-content">
+                <h2>Tour du lịch tối ưu</h2>
+                <p>Đa dạng các loại hình tour du lịch
+với nhiều mức giá khác nhau</p>
+            </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="huong-dan">
+        <div class="huong-dan-top">
+            <h1>Booking cùng ND Travel</h1>
+        <p>Chỉ với 3 bước đơn giản và dễ dàng có ngay trải nghiệm tuyệt vời!</p>
+        </div>
+        <div class="huong-dan-bottom">
+            <div class="huong-dan-khung">
+                <div class="huong-dan-img"><img src="../DA2/public/asset/img/1.jpg" alt=""></div>
+                <div class="huong-dan-content">
+                    <h2>Tìm nơi muốn đến</h2>
+                    <p>Bất cứ nơi đâu bạn muốn đến, chúng tôi
+có tất cả những gì bạn cần</p>
+                </div>
+            </div>
+            <div class="huong-dan-khung">
+                <div class="huong-dan-img"><img src="../DA2/public/asset/img/2.png" alt=""></div>
+                <div class="huong-dan-content">
+                    <h2>Đặt vé</h2>
+                    <p>ND Travel sẽ hỗ trợ bạn đặt vé trực tiếp
+nhanh chóng và thuận tiện</p>
+                </div>
+            </div>
+            <div class="huong-dan-khung">
+                <div class="huong-dan-img"><img src="../DA2/public/asset/img/3.png" alt=""></div>
+                <div class="huong-dan-content">
+                    <h2>Thanh toán</h2>
+                    <p>Hoàn thành bước thanh toán và sẵn sàng
+cho chuyến đi ngay thô</p>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- footer -->
+     <footer>
+        <section class="app-container">
+      <p>tải ứng dụng</p>
+      <div class="app-google">
+        <a href=""><img src="2.png" alt="" /></a>
+        <a href=""><img src="1.jpg" alt="" /></a>
+        <p>nhận bản tin IVY moda</p>
+        <input type="text" placeholder="nhập email của bạn" />
+      </div>
+    </section>
+    <div class="footer-top row">
+      <li>
+        <a href=""><img src="3.jpg" alt="" /></a>
+      </li>
+      <li><a href="">liên hệ</a></li>
+      <li><a href="">tuyển dụng</a></li>
+      <li><a href="">giới thiệu</a></li>
+      <li>
+        <a href="" class="fab fa-facebook"></a>
+        <a href="" class="fab fa-twitch"></a>
+        <a href="" class="fab fa-youtube"></a>
+      </li>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©IVYmoda All rights reserved</p>
+    </div>
+     </footer>
+    
+  </body>
+  <script src="../DA2/public/asset/js/header.js"></script>
+  <script src="../DA2/public/asset/js/home-head.js"></script>
+</html>

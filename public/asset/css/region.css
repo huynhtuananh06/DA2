@@ -1,0 +1,113 @@
+/* PAGE REGION */
+.region-page {
+  background: #222;
+  color: white;
+}
+
+/* Banner */
+.region-banner {
+  height: 70vh;
+  background: url("../../public/asset/img/dongnambobanner.jpg") center/cover
+    no-repeat;
+  position: relative;
+}
+
+.region-banner .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.region-banner h1 {
+  font-size: 48px;
+  color: #ffc107;
+}
+
+.region-banner p {
+  max-width: 600px;
+  font-size: 18px;
+}
+
+/* Content */
+.region-content {
+  padding: 50px;
+}
+
+.region-content h2 {
+  color: #ffc107;
+  margin-bottom: 30px;
+}
+
+/* Tour list */
+.tour-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.tour-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.tour-card:hover {
+  transform: translateY(-5px);
+}
+
+.tour-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.tour-card h3 {
+  padding: 10px;
+}
+
+.tour-card p {
+  padding: 0 10px;
+  color: #ffc107;
+}
+
+.tour-card a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background: #ffc107;
+  color: black;
+  font-weight: bold;
+}
+
+.region-banner {
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.region-banner .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.region-banner h1 {
+  color: #ffc107;
+  font-size: 48px;
+}
+
+.region-banner p {
+  max-width: 600px;
+  font-size: 18px;
+}

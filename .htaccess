@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Bỏ qua file hoặc folder thật
+RewriteCond %{REQUEST_FILENAME} !-f [OR] #*
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ - [L]  #*
+# Route: controller/action/id
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([0-9]+)/?$ index.php?controller=$1&action=$2&id=$3 [L,QSA]
+
+# Route: controller/action
+RewriteRule ^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/?$ index.php?controller=$1&action=$2 [L,QSA]
+
+# Route tất cả request còn lại vào index.php
+RewriteRule ^(.*)$ index.php [L,QSA]

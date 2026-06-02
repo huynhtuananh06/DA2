@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tour</title>
+    <link rel="stylesheet" href="../DA2/public/asset/css/header.css" />
+    <link rel="stylesheet" href="../DA2/public/asset/css/tour.css" />
+    <link rel="stylesheet" href="../DA2/public/asset/css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <figure class="logo row">
+        <a href="/">
+          <img src="../DA2/public/asset/img/2.png" alt="ND Travel Logo" />
+        </a>
+        <figcaption>ND Travel</figcaption>
+      </figure>
+
+      <nav class="menu">
+        <ul>
+           <li><a href="index.php?controller=home&action=index">Trang Chủ</a></li>
+          <li><a href="">Giới Thiệu</a></li>
+
+          <li>
+            <a href="index.php?controller=tour&action=index">Tour Du Lịch</a>
+            <ul class="sub-menu">
+              <li>
+                <a href="">tour trong nước</a>
+                <ul>
+                  <li><a href="">Bắc Trung Bộ</a></li>
+                  <li><a href="">Trung bộ</a></li>
+                  <li><a href="">Nam Trung bộ</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">tour nước ngoài</a>
+                <ul>
+                  <li><a href="">Bắc Trung Bộ</a></li>
+                  <li><a href="">Trung bộ</a></li>
+                  <li><a href="">Nam Trung bộ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="">Tin Tức</a></li>
+          <li><a href="">liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <div class="other row">
+        <form class="search-form" role="search">
+          <input type="text" placeholder="Tìm kiếm..." name="q" />
+          <button type="submit" aria-label="Tìm kiếm">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+
+        <nav class="user-utility-nav">
+          <ul>
+            <li>
+              <a
+                class="fa-solid fa-clock-rotate-left"
+                 href="index.php?controller=booking&action=bookingHistory"
+                title="Lịch sử xem"
+              ></a>
+            </li>
+            <li>
+              <a class="fa-solid fa-user" href="index.php?controller=user&action=index" title="Tài khoản"></a>
+            </li>
+            <li>
+              <a
+                class="fa-solid fa-basket-shopping"
+                href="#"
+                title="Giỏ hàng"
+              ></a>
+            </li>
+            <li>
+              <a class="fa-solid fa-power-off" href="index.php?controller=login&action=logout" title="Đăng xuất"></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- home-head-slider -->
+     <section class="category">
+      <div class="container">
+        <div class="category-top row">
+          <p>trang chủ</p>
+          <span>&#8594;</span>
+          <p>tour du lịch</p>
+          <span>&#8594;</span>
+          <p>tour du lịch</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="category-left">
+            <ul>
+              <li class="category-left-li"><a href="#">Tour trong nước</a>
+                    <ul>
+                        <li><a href="">phú quốc</a></li>
+                        <li><a href="">nha trang </a></li>
+                        <li><a href="">đà nẵng</a></li>
+                    </ul>  
+              </li>
+              <li class="category-left-li"><a href="#">Tour ngoài nước</a>
+                     <ul>
+                        <li><a href="">nhật bản</a></li>
+                        <li><a href="">hàn quốc</a></li>
+                        <li><a href="">trung quốc</a></li>
+                        <li><a href="">nga</a></li>
+                    </ul>  
+               </li>
+              <li class="category-left-li"><a href="#">chọn mức giá</a></li>
+              <li class="category-left-li"><a href="#">Điểm Khởi Hành</a></li>
+              <li class="category-left-li"><a href="#">Điểm Đến</a></li>
+              
+          </div>
+          <div class="category-right row">
+            <div class="category-right-top-item">
+                <p>tour du lịch</p>
+            </div>
+            <div class="category-right-top-item">
+                <button><span>Bộ Lọc</span><i class="fa-solid fa-arrow-down"></i></button>
+            </div>
+            <div class="category-right-top-item">
+                <select name="" id="">
+                    <option value="">sắp xếp</option>
+                    <option value="">giá thấp</option>
+                    <option value="">giá cao</option>
+                    <option value="">thời điểm</option>
+                </select>
+            </div>
+
+
+            <div class="category-right-content row">
+            <div class="category-right-content-item">
+                <img src="../DA2/public/asset/img/8.jpg" alt="">
+                <div class="tour-khung">
+                    <p>khởi hành từ hà nội</p>
+                <h1><a href="">Hà Nội - Hàn Quốc - Đảo Jeju 5N4Đ: Khám phá hòn đảo ngọc giữa biển</a></h1>
+                <div class="start row">
+                    <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>6.500.000<sup>đ</sup></h4>
+                <p>Thời gian: 3N2Đ</p>
+                </div>
+            </div>
+            <div class="category-right-content-item">
+                <img src="../DA2/public/asset/img/8.jpg" alt="">
+                <div class="tour-khung">
+                    <p>khởi hành từ hà nội</p>
+                <h1><a href="">Hà Nội - Hàn Quốc - Đảo Jeju 5N4Đ: Khám phá hòn đảo ngọc giữa biển</a></h1>
+                <div class="start row">
+                    <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>6.500.000<sup>đ</sup></h4>
+                <p>Thời gian: 3N2Đ</p>
+                </div>
+            </div>
+             <div class="category-right-content-item">
+                <img src="../DA2/public/asset/img/8.jpg" alt="">
+                <div class="tour-khung">
+                    <p>khởi hành từ hà nội</p>
+                <h1><a href="">Hà Nội - Hàn Quốc - Đảo Jeju 5N4Đ: Khám phá hòn đảo ngọc giữa biển</a></h1>
+                <div class="start row">
+                    <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>6.500.000<sup>đ</sup></h4>
+                <p>Thời gian: 3N2Đ</p>
+                </div>
+            </div>
+             <div class="category-right-content-item">
+                <img src="../DA2/public/asset/img/8.jpg" alt="">
+                <div class="tour-khung">
+                    <p>khởi hành từ hà nội</p>
+                <h1><a href="">Hà Nội - Hàn Quốc - Đảo Jeju 5N4Đ: Khám phá hòn đảo ngọc giữa biển</a></h1>
+                <div class="start row">
+                    <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>6.500.000<sup>đ</sup></h4>
+                <p>Thời gian: 3N2Đ</p>
+                </div>
+            </div>
+             <div class="category-right-content-item">
+                <img src="../DA2/public/asset/img/8.jpg" alt="">
+                <div class="tour-khung">
+                    <p>khởi hành từ hà nội</p>
+                <h1><a href="">Hà Nội - Hàn Quốc - Đảo Jeju 5N4Đ: Khám phá hòn đảo ngọc giữa biển</a></h1>
+                <div class="start row">
+                    <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>6.500.000<sup>đ</sup></h4>
+                <p>Thời gian: 3N2Đ</p>
+                </div>
+            </div>
+            <div class="category-right-content-item">
+                <img src="../DA2/public/asset/img/8.jpg" alt="">
+                <div class="tour-khung">
+                    <p>khởi hành từ hà nội</p>
+                <h1><a href="">Hà Nội - Hàn Quốc - Đảo Jeju 5N4Đ: Khám phá hòn đảo ngọc giữa biển</a></h1>
+                <div class="start row">
+                    <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>6.500.000<sup>đ</sup></h4>
+                <p>Thời gian: 3N2Đ</p>
+                </div>
+            </div>
+            <div class="category-right-content-item">
+                <img src="../DA2/public/asset/img/8.jpg" alt="">
+                <div class="tour-khung">
+                    <p>khởi hành từ hà nội</p>
+                <h1><a href="">Hà Nội - Hàn Quốc - Đảo Jeju 5N4Đ: Khám phá hòn đảo ngọc giữa biển</a></h1>
+                <div class="start row">
+                    <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>6.500.000<sup>đ</sup></h4>
+                <p>Thời gian: 3N2Đ</p>
+                </div> 
+            </div>
+            <div class="category-right-content-item">
+                <img src="../DA2/public/asset/img/8.jpg" alt="">
+                <div class="tour-khung">
+                    <p>khởi hành từ hà nội</p>
+                <h1><a href="">Hà Nội - Hàn Quốc - Đảo Jeju 5N4Đ: Khám phá hòn đảo ngọc giữa biển</a></h1>
+                <div class="start row">
+                    <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                </div>
+                <h4>6.500.000<sup>đ</sup></h4>
+                <p>Thời gian: 3N2Đ</p>
+                </div>
+            </div>
+
+          </div>
+
+
+
+          <div class="category-right-bottom row">
+            <div class="category-right-bottom-item">
+                <p>hiển thj trang 2 <span>|</span>4 sản phẩm</p>
+            </div>
+            
+            <div class="category-right-bottom-item">
+                <p><span>&#171;<span>1 2 3 4</span>&#187;</span> Trang cuối</p>
+            </div>
+          </div>
+         </div>
+
+          
+        
+         </div> <!---   -->
+      </div>
+    </section>
+
+
+
+
+    
+    <!-- footer -->
+    <section class="app-container">
+      <p>tải ứng dụng</p>
+      <div class="app-google">
+        <a href=""><img src="../../public/asset/img/8.png" alt="" /></a>
+        <a href=""><img src="../../public/asset/img/9.png" alt="" /></a>
+        <p>nhận bản tin IVY moda</p>
+        <input type="text" placeholder="nhập email của bạn" />
+      </div>
+    </section>
+    <div class="footer-top row">
+      <li>
+        <a href=""><img src="../../public/asset/img/10.png" alt="" /></a>
+      </li>
+      <li><a href="">liên hệ</a></li>
+      <li><a href="">tuyển dụng</a></li>
+      <li><a href="">giới thiệu</a></li>
+      <li>
+        <a href="" class="fab fa-facebook"></a>
+        <a href="" class="fab fa-twitch"></a>
+        <a href="" class="fab fa-youtube"></a>
+      </li>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©IVYmoda All rights reserved</p>
+    </div>
+  </body>
+  <script src="../../public/asset/js/tour.js"></script>
+</html>

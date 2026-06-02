@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+}
+.siberbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1); /**/
+  padding: 25px;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+  transition: width 0.3s ease;
+  border-right: 2px solid gray;
+}
+.siberbar:hover {
+  width: 200px;
+}
+.siberbar li {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-bottom: 10px;
+  list-style: none;
+}
+.siberbar i {
+  font-size: 20px;
+  margin-right: 25px;
+}
+.siberbar a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0.95rem 0.5rem;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, 0.5);
+}
+.siberbar li:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+.main {
+  flex: 1;
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  min-height: 100vh;
+  display: flex;
+  margin-left: 70px;
+}
+.main-left {
+  /* 1. Biến thành flex container */
+  display: flex;
+
+  /* 2. Sắp xếp các con theo chiều dọc */
+  flex-direction: column;
+  width: 70%;
+  /* background-color: aquamarine; */
+}
+.main-right {
+  width: 30%;
+}
+.If-siberbar {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: end;
+}
+.If-siberbar li {
+  padding: 5px;
+  margin: 5%;
+  list-style: none;
+  align-content: center;
+}
+.If-siberbar li i {
+  font-size: 20px;
+  border: 1px 1px 20px white;
+}
+.content-right {
+  width: 100%;
+  height: 80%;
+  /* background-color: blue; */
+  margin-top: 10px;
+}
+.content-box {
+  width: 80%;
+  margin: 0 auto 20%; /* Căn giữa và đặt lề dưới */
+  padding: 15px;
+  border: 2px solid gray;
+  border-radius: 25px;
+  /* background-color: #ffffff; Thêm màu nền để nổi bật hơn */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho đẹp */
+}
+.rank {
+  /* width: 80%;
+  height: 25%;
+  margin-bottom: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 25px;
+  border: 2px solid gray;
+  padding: 10px; */
+  display: flex;
+}
+.rank-left {
+  width: 80%;
+  height: 100%;
+  margin-right: 5px;
+}
+.ranh-right {
+  width: 20%;
+  height: 100%;
+  align-items: left;
+}
+/* .rank-bot {
+  width: 100%;
+  height: 20%;
+} */
+/* .nhiemvu {
+  width: 80%;
+  height: 25%;
+  margin-bottom: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 25px;
+  border: 2px solid gray;
+  padding: 10px;
+} */
+.text-nhiemvu {
+  display: flex;
+  justify-content: space-between;
+}
+.text-nhiemvu a {
+  color: red;
+  text-decoration: none;
+}
+/* .lienhe {
+  width: 80%;
+  height: 25%;
+  margin-bottom: 25%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 25px;
+  border: 2px solid gray;
+} */
+
+.main-header {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  /* align-content: center; */
+  justify-content: center;
+}
+.search-bar {
+  display: flex; /* Biến thành flex container */
+  align-items: center; /* Căn giữa icon và input theo chiều dọc */
+  padding: 5px 15px;
+  width: 70%;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.search-bar:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.search-bar input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1rem;
+}
+.search-bar i {
+  /* Hoặc .search-bar label */
+  margin-right: 10px;
+  color: #555; /* Đổi màu icon cho hợp lý hơn */
+}
+.search-bar i:hover {
+  font-size: 18px;
+}
+
+.content-left {
+  /* background-color: orchid; */
+  /* 3. Ra lệnh cho nó lấp đầy không gian còn lại */
+  flex-grow: 1;
+
+  /* Thêm padding để nội dung không dính sát vào lề */
+  padding: 20px;
+
+  /* Thêm thuộc tính này nếu nội dung quá dài và cần cuộn */
+  overflow-y: auto;
+}
+/*.bang {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+   Cặp thuộc tính quan trọng để căn phải 
+  margin-left: auto;
+  margin-right: 20px; /* Giữ khoảng cách 20px với lề phải */
+
+/* Thêm lề trên dưới nếu cần 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  height: 30px;
+}
+
+/* --- BẮT ĐẦU CSS CHO BẢNG --- */
+
+/* Thiết lập cơ bản cho toàn bộ bảng */
+/* --- BẮT ĐẦU CSS CHO DANH SÁCH NHIỆM VỤ --- */
+.task-list {
+  /* Yêu cầu của bạn: Giảm chiều rộng */
+  width: 85%; /* Hoặc một con số khác bạn thấy hợp lý */
+
+  /* Yêu cầu của bạn: Canh lề qua phải */
+  margin-left: auto;
+  margin-right: 20px; /* Giữ khoảng cách 20px với lề phải */
+}
+/* Hàng tiêu đề */
+.task-header {
+  display: flex;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* Hàng dữ liệu - ĐÂY LÀ PHẦN QUAN TRỌNG NHẤT */
+.task-row {
+  display: flex; /* Sắp xếp các ô con theo chiều ngang */
+  align-items: center;
+
+  /* Yêu cầu của bạn: nền trắng, trong suốt, mờ */
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+
+  /* Yêu cầu của bạn: bo góc */
+  border-radius: 25px;
+
+  /* Yêu cầu của bạn: khoảng cách giữa các hàng */
+  margin-bottom: 15px;
+
+  /* Yêu cầu của bạn: đổ bóng */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Hiệu ứng khi di chuột vào */
+.task-row:hover {
+  transform: translateY(-5px); /* Nhấc thẻ lên */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Bóng đổ đậm hơn */
+  background-color: rgba(255, 255, 255, 0.9); /* Sáng lên */
+}
+
+/* Định dạng cho các ô (cả tiêu đề và dữ liệu) */
+.task-header .task-cell,
+.task-row .task-cell {
+  flex: 1; /* Chia đều chiều rộng cho các ô */
+  padding: 0 10px; /* Khoảng đệm nhỏ bên trong ô */
+}
+
+/* Điều chỉnh chiều rộng cho các cột nếu cần */
+.task-cell:nth-child(1) {
+  flex-basis: 10%;
+} /* Cột "Thứ tự" */
+.task-cell:nth-child(2) {
+  flex-basis: 35%;
+} /* Cột "Mô tả" */
+.task-cell:nth-child(3) {
+  flex-basis: 20%;
+} /* Cột "Ngày bắt đầu" */
+.task-cell:nth-child(4) {
+  flex-basis: 20%;
+} /* Cột "Ngày kết thúc" */
+.task-cell:nth-child(5) {
+  flex-basis: 15%;
+} /* Cột "Trạng thái" */
+
+/* --- KẾT THÚC CSS --- */
+.cuoi {
+  padding: 15px 20px;
+}
+.cuoi ul {
+  display: flex;
+  justify-content: end;
+}
+.cuoi ul li {
+  margin: 5px;
+  padding: 10px;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cuoi ul li a {
+  text-decoration: none;
+  color: white;
+}
+.cuoi ul li:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: translateY(-5px);
+}

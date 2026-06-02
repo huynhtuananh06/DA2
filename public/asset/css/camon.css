@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* Bổ sung/cập nhật: Cần thiết để body có thể kế thừa chiều cao 100% */
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.camon {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 10px;
+}

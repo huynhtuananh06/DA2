@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../DA2/public/asset/css/sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="admin row">
+      <div class="admin-left">
+        <div class="admin-logo row">
+          <img src="../DA2/public/asset/img/12.png" alt="" />
+          <h3>VKU</h3>
+        </div>
+        <div class="anh-nen row">
+          <div class="img"><img src="" alt="" /></div>
+          <div class="anh-nen-conten">
+            <p>xin chào</p>
+            <h3>Huỳnh Tuấn Anh</h3>
+          </div>
+        </div>
+
+        <div class="quan-ly">
+          <p>tuần học thứ 17</p>
+          <div class="danh-muc">
+            <ul>
+              <li>quản lí tour</li>
+              <li>quản lí booking</li>
+              <li>quản lí user</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="admin-right">
+        <div class="admin-right-top row">
+          <p>quản lí tour</p>
+
+          <button>đăng xuất</button>
+        </div>
+        <div class="form-right-bottom">
+          <form
+            action="index.php?controller=admin&action=themTour"
+            method="POST"
+          >
+            <input type="text" placeholder="tiêu đề" />
+            <input type="text" placeholder="mô tả" />
+            <input type="text" placeholder="ảnh" />
+            <input type="text" placeholder="số lượng" />
+            <input type="text" placeholder="giá người lớn" />
+            <input type="text" placeholder="giá Trẻ Em" />
+            <input type="text" placeholder="trạng thái" />
+            <input type="text" placeholder="lịch trình cụ thể" />
+            <input type="text" placeholder="review" />
+            <input type="text" placeholder="ngày khởi hành" />
+            <input type="text" placeholder="ngày kết thúc" />
+            <div class="button-form">
+              <a href="">quay lại</a>
+              <button type="submit">thêm Tour</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

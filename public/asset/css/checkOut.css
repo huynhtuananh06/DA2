@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* Bổ sung/cập nhật: Cần thiết để body có thể kế thừa chiều cao 100% */
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkout {
+  width: 600px;
+  height: 400px;
+  border: 1px solid #ccc; /* Thêm border để dễ nhìn */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.checkout form {
+  height: 100%;
+  display: flex;
+}
+
+.img-container {
+  flex: 2;
+  height: 100%;
+
+  position: relative;
+}
+.img-container img {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 50%; /* Đẩy mép trên của ảnh xuống 50% chiều cao của cha */
+  left: 50%; /* Đẩy mép trái của ảnh sang 50% chiều rộng của cha */
+  transform: translate(-50%, -50%);
+}
+.method-right {
+  flex: 1;
+  border-left: 1px solid black;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.img-method {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-method img {
+  width: 80px;
+  height: 60px;
+}
+
+.method {
+  display: flex;
+  flex-direction: column;
+}
+.inbut {
+  padding: 5px 10px;
+}
+.button {
+  align-content: center;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.button button {
+  height: 40px;
+  width: 100px;
+}

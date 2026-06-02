@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+:root {
+  --primary-color: #fff;
+  --sencondary-color: black;
+  --accent-color: pink;
+  --text-color: red;
+  --boder-color: blue;
+  --hilight: gray;
+}
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  overflow-x: hidden; /*cat noi dung bi tran*/
+}
+.navbar {
+  padding: 1.5rem 5%;
+  background-color: rgba(255, 255, 255, 0.95);
+  background-color: aqua;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--boder-color);
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700; /*do dam chu*/
+  color: var(--accent-color);
+  letter-spacing: -1px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  background-color: aquamarine;
+}
+.nav-links a {
+  color: var(--text-color);
+  text-decoration: none; /* # */
+  font-weight: 500;
+  transition: all 0.5s;
+  position: relative;
+}
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.3s;
+}
+.nav-links a:hover::after {
+  width: 100%;
+}

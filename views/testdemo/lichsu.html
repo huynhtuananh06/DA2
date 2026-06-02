@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../DA2/public/asset/css/sidebar.css" />
+    <link rel="stylesheet" href="../DA2/public/asset/css/admin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="admin row">
+      <div class="admin-left">
+        <div class="admin-logo row">
+          <img src="../DA2/public/asset/img/12.png" alt="" />
+          <h3>VKU</h3>
+        </div>
+        <div class="anh-nen row">
+          <div class="img"><img src="" alt="" /></div>
+          <div class="anh-nen-conten">
+            <p>xin chào</p>
+            <h3>Huỳnh Phan Bảo Luân</h3>
+          </div>
+        </div>
+
+        <div class="quan-ly">
+          <p>tuần học thứ 17</p>
+          <div class="danh-muc">
+            <ul>
+              <li>
+                <a href="index.php?controller=admin&action=tour"
+                  >tour chưa hoàn thành</a
+                >
+              </li>
+              <li>
+                <a href="index.php?controller=admin&action=booking"
+                  >tour đã hoàn thành</a
+                >
+              </li>
+              <li>tour đã huỷ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="admin-right">
+        <div class="admin-right-top row">
+          <p>Lịch sử đặt vé</p>
+
+          <button>
+            <a href="index.php?controller=login&action=logout">đăng xuất</a>
+          </button>
+        </div>
+        <div class="admin-right-bottom">
+          <table>
+            <tr>
+              <td>tenTour</td>
+              <td>name</td>
+              <td>numAdutls</td>
+              <td>numChildren</td>
+
+              <td>totalPrice</td>
+              <td>bookingStatus</td>
+              <td colspan="2">xử lý</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+
+              <td class="xuly">
+                <a
+                  href="index.php?controller=admin&action=tourDelete&id=<?= $tour['tourID'] ?>"
+                  >huỷ vé</a
+                >
+              </td>
+              <td class="xuly">
+                <a
+                  href="index.php?controller=admin&action=editTour&id=<?= $tour['tourID'] ?>"
+                  >sửa</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="8">Không có tour nào</td>
+            </tr>
+          </table>
+          <div class="nut-them">
+            <a href="index.php?controller=admin&action=themTour">thêm</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
